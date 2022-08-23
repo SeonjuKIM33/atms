@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import url('reset.css'); 
+
+/* 본문바로가기  */
+/* accessibility */
+.accessibility {position:relative;z-index:1000;width:100%;overflow:hidden;}
+.accessibility a {display:block;width:1px;height:1px;margin:0 -1px -1px 0;font-size:0;line-height:0;text-align:center;overflow:hidden;box-sizing:border-box;}
+.accessibility a:focus, #accessibility a:hover, #accessibility a:active {width:auto;height:32px;padding:8px 0;margin:0;font-size:16px;line-height:1;color:#fff; background:#007bff;}
+html,body {height:100%; letter-spacing: -0.05rem; font-family:'Spoqa';}
+/* form */
+input,select,textarea{height:3rem;padding:0 0.5rem;color:#3f474d;border:1px solid #ced6de; border-radius:4px;outline:none;background-color:#fff;box-sizing:border-box;}
+textarea{height:inherit;}
+input:focus,select:focus,textarea:focus{outline:none;border:1px solid #3f44de;}
+input:disabled,select:disabled,textarea:disabled{color:#565c63;border:1px solid #ced6de;background-color:#f8f9fd;}
+
+/* contents  */
+.contents_login {position:relative; min-width:1280px; height:100%; margin:0 auto; background-color:#2f363e;} 
+#contents {position:absolute;  left: 50%;  top:50%; width:380px; transform: translate(-50%,-50%); }
+#contents .contents_box {padding:25px; background-color: #fff;  border-radius:12px; text-align:center; box-shadow: 0px 11px 13px 0px rgba(18, 72, 156, 0.36);}
+#contents .contents_box .title_box {margin-top:20px; margin-bottom:45px;}
+#contents .contents_box .title_box h1 {line-height:0;}
+#contents .contents_box .cont_box li {margin-bottom:20px; padding:10px 0; text-align: left;}
+#contents .contents_box .cont_box li label {display:block; font-size:16px; line-height:18px; font-weight:400; color:#000;  letter-spacing: -1px;}
+#contents .contents_box .cont_box li div { overflow:hidden; position:relative; height:35px; margin-top:9px;  padding:10px 10px 10px 32px; background-color:#373a3e;  border-radius:6px;  letter-spacing: -1px;;}
+#contents .contents_box .cont_box li div:before {content: ''; display: block; position: absolute; left:0; top:50%; z-index:4; width:100%; height:100%; background-image:url(../images/login/icon_id.png); background-repeat:  no-repeat; background-position: 11px center; transform: translate(0,-50%); }
+#contents .contents_box .cont_box li:last-child div:before {background-image:url(../images/login/icon_pw.png);}
+#contents .contents_box .cont_box li div input {display:inline-block; position: relative; z-index: 10; width:100%; height:35px;  border:none ; background-color:#373a3e ; font-family:'Arial'; font-size:16px; line-height:20px; color:#999;  font-weight: 500;}
+#contents .contents_box .cont_box .btn_box {overflow: hidden; position:relative; padding-bottom:5px; margin-top:40px;  border-radius:6px;}
+#contents .contents_box .cont_box .btn_box:before {display: block; content: ''; position:absolute; left: 0; bottom:1px;  width: 100%; height: 10px;  background-color: #3d823e;border-radius: 0 0 10px 10px;}
+#contents .contents_box .cont_box .btn_box input[type="submit"] {display:inline-block; overflow:hidden; position:relative; z-index:20; width:100%; height: 56px; padding:0; margin:0;  background-color:#6db844; border:none; border-radius:6px; font-family:'Arial'; font-size:18px; line-height:56px; font-weight:600; color:#fff;}
+#contents .contents_box .contact {margin-top:50px; margin-bottom:20px; font-size:16px; font-weight:500; color:#999;}
